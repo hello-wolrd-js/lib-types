@@ -1,0 +1,14 @@
+{
+    "name": "@types/hwjs-types",
+    "private": false,
+    "version": "1.0.0",
+    "description": "hwjs世界依赖的类型声明",
+    "types": "./index.d.ts",
+    "keywords": [
+        "hwjs",
+        "lib",
+        "types"
+    ],
+    "author": "tyee",
+    "license": "AGPL-3.0-only"
+}
