@@ -1,14 +1,19 @@
 /**
- * Window对象上挂载的东东!
+ * 全局变量(为了方便 QWQ) = window.HWJS
  */
-export declare interface Window {
+declare const HWJS: HWJS;
+
+/**
+ * 拓展window对象
+ */
+interface Window {
     HWJS: HWJS;
 }
+
 /**
- * 使用 hwjs API,写成函数调用的形式是因为某些API需要正确的执行上下文
- * @returns hwjs API
+ * HWJS
  */
-export declare const useHWJS: () => {
+declare type HWJS = {
     /**
      * 获取用户信息
      * @returns 用户信息的只读代理对象
@@ -26,11 +31,6 @@ export declare const useHWJS: () => {
         close: () => void;
     };
 };
-
-/**
- * HWJS
- */
-export declare type HWJS = ReturnType<typeof useHWJS>;
 
 /**
  * 用户信息
